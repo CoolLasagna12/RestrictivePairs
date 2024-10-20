@@ -24,7 +24,7 @@ class App:
         self.entryTeam = ttk.Entry(self.frame1)
         self.entryTeam.grid(row=2, column=0, padx=5, pady=5)
 
-        self.buttonAdd = ttk.Button(self.frame1, text="Execute", command=self.addName)
+        self.buttonAdd = ttk.Button(self.frame1, text="Add", command=self.addName)
         self.buttonAdd.grid(row=2, column=1, padx=5, pady=5)
 
         # Cadre 2 
