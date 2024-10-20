@@ -141,7 +141,7 @@ class App:
     def checkAlreadyPairs(self,people1,people2,pairList):
         for i in pairList:
             for nb in range(len(i)):
-                if i[nb]['firstName']==people1['firstName'] or i[nb]['firstName']==people2['firstName']:
+                if (i[nb]['firstName']==people1['firstName'] and i[nb]['lastName']==people1['lastName']) or (i[nb]['firstName']==people2['firstName'] and i[nb]['lastName']==people2['lastName']):
                     return True
         return False
     def checkAlreadyCoffeed(self,people1,people2):
